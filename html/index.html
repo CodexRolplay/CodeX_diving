@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Codex Diving HUD</title>
+</head>
+<body>
+  <div id="hud" class="hud hidden">
+    <div class="panel glow">
+      <div class="header">
+        <div>
+          <div class="eyebrow">CODEX DIVING</div>
+          <div class="title">Scuba Monitor</div>
+        </div>
+        <div id="status" class="status stable">STABLE</div>
+      </div>
+      <div class="metric-row">
+        <div class="metric-label">OXYGEN</div>
+        <div id="oxygenText" class="metric-value">0s</div>
+      </div>
+      <div class="bar-wrap">
+        <div class="bar">
+          <div id="oxygenBar" class="fill oxygen"></div>
+        </div>
+      </div>
+      <div class="metric-row compact">
+        <div class="metric-label">TANK CONDITION</div>
+        <div id="tankText" class="metric-value">0%</div>
+      </div>
+      <div class="bar-wrap compact-gap">
+        <div class="bar small">
+          <div id="tankBar" class="fill tank"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
